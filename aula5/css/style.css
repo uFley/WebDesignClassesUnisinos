@@ -1,0 +1,21 @@
+h1{
+    color: red;
+}
+
+p {
+    color: blue;
+}
+
+/* O breakpoint dessa Media Query terá seu gatilho de cor azul enquanto sua tela tiver no MÁXIMO 500px */
+@media screen and (max-width: 500px) {
+    h1 {
+        color: blue;
+    }
+}
+
+/* O breakpoint dessa Media Query terá seu gatilho de cor azul enquanto sua tela tiver no MÍNIMO 500px */
+@media screen and (min-width: 500px) {
+    p {
+        color: red;
+    }
+}
