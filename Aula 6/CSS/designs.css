@@ -1,0 +1,191 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    padding-bottom: 500px;
+}
+
+.flex { 
+    display:flex;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column; /* Altera o Eixo primário do conteiner */
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+.wrap {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permite a quebra de linha dos componentes filhos para comportar sua regra de tamanho */
+}
+
+.box {
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+
+
+/* Justify Content */
+.center {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    border: 1px dashed purple;
+}
+
+.center .box {
+    width: 50px;
+}
+
+.space-around,
+.space-between,
+.end {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center; 
+    border: 1px dashed purple;
+}
+
+.space-around .box,
+.space-between .box,
+.end .box {
+    width: 40px;
+    border: 1px solid red;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.end {
+    justify-content: end;
+}
+
+/* Align Items */
+
+.align-center, 
+.flex-end,
+.stretch {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.align-center .box, 
+.flex-end .box,
+.stretch .box{
+    width: 50px;
+    border: 1px solid red;
+}
+
+.align-center {
+    align-items: center; /* Align-Items: Indica como os elementos devem se comportar no eixo secundário ( que é ditado pelo flex ... */
+    justify-content: center;
+}
+
+.flex-end {
+    align-items: end; 
+}
+
+.stretch {
+    align-items: stretch;
+}
+
+.stretch .box {
+    height: auto;
+}
+
+.gap {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    gap: 10px;
+}
+
+.gap .box {
+    width: 32%;
+}
+
+.order {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#one {
+    order:1
+}
+
+#two {
+    order: 2;
+}
+
+#three {
+    order: 3;
+}
+
+.grow {
+    display: flex;
+}
+
+.grow .box {
+    flex: 1;
+}
+
+.grow .big {
+    flex: 6;
+}
+
+.basis {
+    display: flex;
+}
+
+.basis .box {
+    flex-basis: 20px;
+}
+.basis .big {
+    flex-grow: 1;
+}
+
+.shrink {
+    display: flex;
+}
+
+.shrink .box {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small {
+    flex-shrink: 2;
+}
+
+.auto-alignment {
+    display: flex;
+    height: 300px;
+    align-items: end;
+    border: 1px solid purple;
+}
+
+.auto-alignment .different {
+    align-self: center;
+}
