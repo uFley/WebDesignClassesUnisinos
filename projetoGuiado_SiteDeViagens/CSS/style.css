@@ -1,0 +1,166 @@
+/* ---------- Global definitions ---------- */
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+}
+
+figcaption {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #767676;
+    font-weight: bold;
+}
+
+header {
+    border-bottom: 2px solid #ccc;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+figure, blockquote {
+    margin: 0;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+/* ---------- Class definition ---------- /*
+
+/* Header do site */
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 40px;
+    align-items: center;
+}
+
+.blog-header a{
+    padding-left: 10px;
+}
+
+.blog-header,
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Container */
+.container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* Posts do site */
+article img {
+    width: 100%;
+}
+
+.posts p{
+    font-style: italic;
+}
+
+.posts h2{
+    margin-top: 15px;
+}
+
+/* Lateral do Site */
+.box {
+    border: 1px solid #ccc;
+    padding: 30px;
+    padding-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+/* Botão de 'Buscar' */
+.button-search{
+    display: flex;
+}
+
+.box button {
+    background-color: #37a1f7;
+    color: white;
+}
+
+.box input {
+  width: 75%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.box button {
+  width: 25%;
+  background: lightskyblue;
+  color: white;
+  border: none;
+}
+
+/* Sessão de 'Categorias' */
+.box ul {
+    padding: 0px;
+}
+
+.box li {
+    padding-bottom: 15px;
+}
+
+#categories {
+    padding-bottom: 10px;
+}
+
+/* Sessão de 'Tags' */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    background: #ddd;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* Footer */
+.footer-format{
+    text-align: center;
+    padding: 30px;
+    height: 100px;
+}
+
+.footer-format h3,
+.footer-format p {
+  margin: 3px;
+}
+
+/* Efeitos visuais reativos */
+.tags span:hover, 
+.box button:hover{
+    background: #ccc;
+    cursor: pointer;
+}
