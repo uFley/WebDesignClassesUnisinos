@@ -1,0 +1,60 @@
+/* --------- Global Definitions --------- */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 2px;
+}
+/* --------- Specific Definitions --------- */
+.section-images {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* --------- Templates ---------*/
+/* First template - 100x100 */
+.img-small {
+    width: 100px;
+    height: 100px;
+}
+
+/* Second template - 200x200 */
+.img-medium {
+    width: 200px;
+    height: 200px;
+}
+
+/* Third template - 300x300 */
+.img-large {
+    width: 300px;
+    height: 300px;
+}
+
+/* --------- Buttons --------- */
+.buttons {
+    position: absolute; 
+    bottom: 50px;    
+    left: 0;
+    right: 0;
+    
+    /* Flexbox  */
+    display: flex;
+    justify-content: center; 
+    gap: 20px;               
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
